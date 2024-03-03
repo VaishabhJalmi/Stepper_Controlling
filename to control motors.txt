@@ -1,0 +1,11 @@
+To control the motor using pot 
+https://www.youtube.com/watch?v=cYTICj4DWYc
+
+arduino +h bridhge F&R
+https://www.circuitmagic.com/arduino/how-to-run-stepper-motor-with-arduino-using-l298n-driver-module/
+
+good explained
+https://lastminuteengineers.com/stepper-motor-l298n-arduino-tutorial/
+
+for the counter in the program
+https://github.com/makertut/stepper-l298N/blob/master/code1.ino

@@ -1,0 +1,33 @@
+//Globals
+#define STEPPIN 12
+#define DIRPIN 11
+#define ENAPIN 10
+
+void setup () {
+// put your setup code here,
+pinMode (STEPPIN, OUTPUT);
+pinMode (DIRPIN, OUTPUT);
+pinMode (ENAPIN, OUTPUT);
+}
+void loop () {
+// put your main code here, to
+forward (400);
+reverse (400);
+}
+void forward (int steps) {
+int i;
+digitalWrite (ENAPIN, LOW);//ENABLE
+digitalWrite (DIRPIN, HIGH); //SET
+for (i=0; i<steps; i++) {
+digitalWrite (STEPPIN, digitalRead
+delay (5);
+}
+digitalWrite (ENAPIN, HIGH);//DISABLE STEPPER
+void reverse (int steps) {
+int i;
+digitalWrite (ENAPIN, LOW);//ENABLE IS ACTIVE LOW
+digitalWrite (DIRPIN, LOW); //SET DIRECTION
+for (i=0; i<steps; i++) {
+digitalWrite (STEPPIN, !digitalRead(STEPPIN));
+delay (5);
+}
